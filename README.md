@@ -4,7 +4,7 @@ really basic overview of how to get started controlling motors using micropython
 Stepper motors offer good control and torque. 
 I bought a very cheap starter motor with controller board for under $10 to check the basics.
 
-!(BYJ48-StepperMotor_ULN2003Driver.jpg)
+![](BYJ48-StepperMotor_ULN2003Driver.jpg)
 
 I connected: 
 
@@ -25,6 +25,8 @@ The stepper motor script is really basic, no I2C or SPI
 just turn on then off each GPIO in sequence, for each available step in the motor.
 
 to reverse the direction of the motor, just reverse the switching sequence.  
-I did this by putting the GPIOs in a list then simply reversing the list order
+I did this by putting the GPIOs in a list then simply reversing the list order.
 
-!(https://www.youtube.com/watch?v=7Vcm3LxTMI8)
+The motor is very slow (datasheet inidicates a max RPM of 30) but this is a good way to get the basics right
+
+https://www.youtube.com/watch?v=7Vcm3LxTMI8
